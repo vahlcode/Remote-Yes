@@ -8,7 +8,7 @@ section.sign-up {
     height: 100vh;
     width: 100vw;
     background: var(--background-color);
-    z-index: 11;
+    z-index: 30;
     overflow: auto;
 }
 
@@ -57,7 +57,7 @@ section.sign-up>.row>.text>button {
         height: 100vh;
         width: 100vw;
         background: var(--background-color);
-        z-index: 11;
+        z-index: 30;
     }
     section.sign-up h3 {
         font-size: 30px;
