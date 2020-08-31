@@ -1,4 +1,5 @@
 import React, {Component} from "react";
+import * as timeago from 'timeago.js';
 
 import "./Card.css";
 
@@ -68,11 +69,7 @@ class Card extends Component {
     }
 
     render() {
-        const {job, saved, draw} = this.state;
-        const date = new Date(job.publication_date).toLocaleDateString('en-US', {  
-            day : 'numeric',
-            month : 'short'
-        })
+        const {job, saved, draw} = this.state
         const category_slug = (category) => {
             let slug;
             if (category.indexOf("Development")) {
@@ -106,7 +103,7 @@ class Card extends Component {
                                     <line x1="16" y1="2" x2="16" y2="6"></line>
                                     <line x1="8" y1="2" x2="8" y2="6"></line>
                                     <line x1="3" y1="10" x2="21" y2="10"></line>
-                                </svg>{date && date}
+                                </svg>{job.publication_date && timeago.format(job.publication_date)}
                             </span>
                         </div>
                         <div className="job-info">
