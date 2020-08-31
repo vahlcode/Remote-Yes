@@ -31,7 +31,7 @@ class SignUp extends Component {
     fetchCategories() {
         fetch("https://shielded-sands-39483.herokuapp.com/https://remotive.io/api/remote-jobs/categories")
         .then(response => response.json())
-        .then(categories => this.setState({categories: categories["jobs"]}, () => console.log(this.state.categories)))
+        .then(categories => this.setState({categories: categories["jobs"]}))
         .catch(error => console.log(error))
     }
 

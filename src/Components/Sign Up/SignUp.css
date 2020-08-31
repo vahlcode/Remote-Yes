@@ -45,7 +45,7 @@ section.sign-up .categories {
 
 section.sign-up>.row>.text>button {
     background: var(--primary-color);
-    color: var(--font-color);
+    color: #ffffff;
     padding: 15px 30px;
 }
 
@@ -86,7 +86,6 @@ section.sign-up>.row>.text>button {
     }
     section.sign-up>.row>.text>button {
         background: var(--primary-color);
-        color: var(--font-color);
         padding: 15px 30px;
     }
 }
