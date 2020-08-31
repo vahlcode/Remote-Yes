@@ -21,7 +21,7 @@ class Footer extends Component {
         return(
             <footer className={`${draw ? " draw" : ""}`}>
                 <div className="copyright">
-                    <p>Made with love by <a href="https://twitter.com/vahlcode">Valentine Elum</a> with the <a href="http://https://remotive.io">Remotive API</a>. Icons by <a href="https://feathericons.com/">Feather Icons</a>.</p>
+                    <p>Made with love by <a href="https://twitter.com/vahlcode">Valentine Elum</a> with the <a href="http://https://remotive.io">Remotive API</a>. Icons by <a href="https://feathericons.com/">Feather Icons</a>. Illustrations by <a href="https://undraw.co/">Feather Icons</a></p>
                 </div>
             </footer>
         )
