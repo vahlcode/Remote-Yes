@@ -32,7 +32,7 @@ class Bookmark extends Component {
             <section className={`list-section${draw ? " draw" : ""}`}>
                 <div className="entry">
                     <h1>
-                        {(jobs !== null && jobs.length > 0) && jobs.length} Bookmarked Jobs
+                        {(jobs !== null && jobs.length > 0) && jobs.length} Bookmarked Job{(jobs !== null && jobs.length > 1) ? "s" : ""}
                     </h1>
                 </div>
                 <div id="top"></div>
