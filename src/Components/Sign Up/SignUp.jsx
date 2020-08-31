@@ -49,6 +49,7 @@ class SignUp extends Component {
         localStorage.setItem("link", LINK)
         localStorage.setItem("signed", true)
         this.setState({hide: true})
+        window.location.reload()
     }
 
     render() {
