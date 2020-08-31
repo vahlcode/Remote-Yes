@@ -1,0 +1,39 @@
+.list-section {
+    padding: 100px 20px 50px 20px;
+    transition: .8s;
+}
+
+.list-section>.jobs {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 35px;
+}
+
+.list-section>.entry {
+    margin-bottom: 50px;
+}
+
+.list-section>.entry h1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (min-width: 920px) {
+    .list-section {
+        padding: 100px 70px 50px 70px;
+        transition: .8s;
+    }
+    .list-section>.jobs {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .list-section.draw {
+        width: 50%;
+        transition: .8s;
+    }
+    .list-section.draw>.jobs {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

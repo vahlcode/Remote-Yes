@@ -1,0 +1,375 @@
+.drawer.draw {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    position: fixed;
+    padding: 70px 20px 100px 20px;
+    overflow: auto;
+    transform: translateX(0);
+}
+
+.drawer {
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    right: 0;
+    position: fixed;
+    padding: 70px 20px 100px 20px;
+    z-index: 10;
+    background: var(--background-color);
+    transform: translateX(100%);
+    transition: .8s;
+}
+
+.drawer>.body>.title-company>h1 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.drawer>.body>.title-company>h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.drawer>.body>.title-company>h3>span {
+    font-size: 10px;
+    margin-left: 10px;
+    padding: 5px;
+    background: var(--shadow-color);
+    color: var(--primary-color);
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.drawer>.body>.title-company>h3>span>svg {
+    margin-right: 5px;
+}
+
+.drawer>.body>.category-date-tags>.category-date {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.drawer>.body>.category-date-tags>.category-date>span {
+    display: inline-flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+.drawer>.body>.category-date-tags>.category-date>span>svg {
+    margin-right: 5px;
+}
+
+.drawer>.body>.category-date-tags>.tags>ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.drawer>.body>.category-date-tags>.tags>ul>li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    font-size: 10px;
+    padding: 5px;
+    background: var(--shadow-color);
+    color: var(--primary-color);
+    border-radius: 4px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.drawer>.body>.description {
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.drawer>.body>.description p {
+    margin: 20px 0;
+    font-size: 14px;
+    line-height: 1.5em;
+}
+
+.drawer>.body>.description p br {
+    display: none;
+}
+
+.drawer>.body>.description span {
+    font-size: 14px!important;
+    line-height: 1.5em;
+    font-weight: 700;
+}
+
+.drawer>.body>.description .h3 {
+    font-size: 14px!important;
+    line-height: 1.5em;
+    font-weight: 700;
+}
+
+.drawer>.body>.description .h4 {
+    text-align: left!important;
+}
+
+.drawer>.body>.description strong {
+    display: inline-block;
+    font-size: 14px!important;
+    line-height: 1.5em;
+    font-weight: 600;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.drawer>.body>.description a {
+    display: inline-flex;
+    font-size: 10px;
+    padding: 5px;
+    background: var(--shadow-color);
+    color: var(--primary-color);
+    border-radius: 4px;
+    font-weight: 600;
+    text-decoration: none;
+    position: relative;
+}
+
+.drawer>.body>.description p:empty {
+    display: none;
+}
+
+.drawer>.body>.description ul {
+    margin: 20px 0;
+}
+
+.drawer>.body>.description ul>li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.drawer>.body>.description ul>li::before {
+    content: "☑";
+    font-size: 14px;
+    padding-left: 20px;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    color: var(--primary-color);
+}
+
+.drawer>.body>.description ol {
+    margin: 20px 0;
+}
+
+.drawer>.body>.description ol>li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.drawer>.body>.description ol>li::before {
+    content: "☑";
+    font-size: 14px;
+    padding-left: 20px;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    color: var(--primary-color);
+}
+
+.drawer>.body>.description ul>ul {
+    margin: 20px 0;
+    padding-left: 20px;
+}
+
+.drawer>.body>.description ul>ul>li {
+    list-style: none;
+    margin-bottom: 10px;
+    font-size: 14px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.drawer>.body>.description ul>ul>li::before {
+    content: "☑";
+    font-size: 14px;
+    padding-left: 20px;
+    position: absolute;
+    top: 0;
+    left: -20px;
+    color: var(--primary-color);
+}
+
+.drawer>.body>.link {
+    margin-top: 20px;
+}
+
+.drawer>.body>.link>a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background: var(--primary-color);
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+}
+
+.drawer>.body>.link>a>svg {
+    margin-right: 10px;
+}
+
+@media only screen and (min-width: 920px) {
+    .drawer.draw {
+        width: 50%;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        position: fixed;
+        padding: 100px 50px 50px 50px;
+        overflow: auto;
+        transform: translateX(0);
+    }
+    .drawer {
+        width: 50%;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        position: fixed;
+        padding: 100px 50px 50px 50px;
+        z-index: 9;
+        background: var(--background-color);
+        transform: translateX(100%);
+    }
+    .drawer>.body>.title-company>h1 {
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    .drawer>.body>.title-company>h3 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .drawer>.body>.title-company>h3>span {
+        font-size: 10px;
+        margin-left: 10px;
+        padding: 5px;
+        background: var(--shadow-color);
+        color: var(--primary-color);
+        border-radius: 4px;
+        display: inline-flex;
+        align-items: center;
+    }
+    .drawer>.body>.title-company>h3>span>svg {
+        margin-right: 5px;
+    }
+    .drawer>.body>.category-date-tags>.category-date {
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+    .drawer>.body>.category-date-tags>.category-date>span {
+        display: inline-flex;
+        align-items: center;
+        margin-right: 10px;
+    }
+    .drawer>.body>.category-date-tags>.category-date>span>svg {
+        margin-right: 5px;
+    }
+    .drawer>.body>.category-date-tags>.tags>ul {
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-bottom: 10px;
+    }
+    .drawer>.body>.category-date-tags>.tags>ul>li {
+        display: flex;
+        align-items: center;
+        list-style: none;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        font-size: 10px;
+        padding: 5px;
+        background: var(--shadow-color);
+        color: var(--primary-color);
+        border-radius: 4px;
+        font-weight: 600;
+    }
+    .drawer>.body>.description {
+        font-size: 14px;
+        line-height: 1.5em;
+    }
+    .drawer>.body>.description p {
+        margin: 20px 0;
+        font-size: 14px;
+        line-height: 1.5em;
+    }
+    .drawer>.body>.description p br {
+        display: none;
+    }
+    .drawer>.body>.description span {
+        font-size: 14px!important;
+        line-height: 1.5em;
+        font-weight: 700;
+    }
+    .drawer>.body>.description .h3 {
+        font-size: 14px!important;
+        line-height: 1.5em;
+        font-weight: 700;
+    }
+    .drawer>.body>.description strong {
+        display: inline-block;
+        font-size: 14px!important;
+        line-height: 1.5em;
+        font-weight: 600;
+        font-style: italic;
+        margin-bottom: 10px;
+    }
+    .drawer>.body>.description p:empty {
+        display: none;
+    }
+    .drawer>.body>.description ul {
+        margin: 20px 0;
+    }
+    .drawer>.body>.description ul>li {
+        list-style: none;
+        margin-bottom: 10px;
+        font-size: 14px;
+        padding-left: 20px;
+        position: relative;
+    }
+    .drawer>.body>.description ul>li::before {
+        content: "☑";
+        font-size: 14px;
+        padding-left: 20px;
+        position: absolute;
+        top: 0;
+        left: -20px;
+        color: var(--primary-color);
+    }
+    .drawer>.body>.description ul>ul {
+        margin: 20px 0;
+        padding-left: 20px;
+    }
+    .drawer>.body>.description ul>ul>li {
+        list-style: none;
+        margin-bottom: 10px;
+        font-size: 14px;
+        padding-left: 20px;
+        position: relative;
+    }
+    .drawer>.body>.description ul>ul>li::before {
+        content: "☑";
+        font-size: 14px;
+        padding-left: 20px;
+        position: absolute;
+        top: 0;
+        left: -20px;
+        color: var(--primary-color);
+    }
+}

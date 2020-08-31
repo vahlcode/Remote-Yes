@@ -1,0 +1,162 @@
+.card {
+    background: var(--background-color);
+    box-shadow: 0 0 40px var(--shadow-color);
+    border-top: 2px solid var(--primary-color);
+    cursor: pointer;
+    padding: 10px 20px 10px 20px;
+    position: relative;
+    transition: .8s;
+}
+
+.card .row {
+    display: flex;
+}
+
+.card .save-job {
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    box-shadow: 0 0 40px var(--shadow-color);
+    background: var(--background-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--primary-color);
+    position: absolute;
+    margin-top: -35px;
+    right: 20px;
+}
+
+.card .save-job.saved {
+    background: var(--primary-color);
+}
+
+.card .save-job>svg {
+    stroke: var(--font-color);
+}
+
+.card .save-job.saved>svg {
+    stroke: var(--shadow-color);
+}
+
+.card .card-image {
+    margin-right: 15px;
+}
+
+.card .card-image>svg {
+    top: 0;
+    left: 0;
+    stroke: #00000031;
+}
+
+.card .card-title {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.card .card-title>h1 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.card .card-company {
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.card .card-company>span {
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 10px;
+    padding: 5px;
+    background: var(--shadow-color);
+    color: var(--primary-color);
+    border-radius: 4px;
+    margin-left: 10px;
+}
+
+.card .card-company>span>svg {
+    margin-right: 5px;
+}
+
+.card .job-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.card .job-info span:last-of-type {
+    margin-right: 0;
+}
+
+.card .job-info span {
+    font-size: 10px;
+    padding: 5px;
+    background: var(--shadow-color);
+    color: var(--primary-color);
+    border-radius: 4px;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+.card .job-info span>svg {
+    margin-right: 5px;
+}
+
+.card .card-category {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.card .card-category a {
+    text-decoration: none;
+    color: var(--font-color);
+}
+
+.card .card-tags>ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.card .card-tags>ul>li {
+    display: flex;
+    align-items: center;
+    list-style: none;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    font-size: 10px;
+    padding: 5px;
+    background: var(--shadow-color);
+    color: var(--primary-color);
+    border-radius: 4px;
+    font-weight: 600;
+}
+
+.card .card-tags>ul>li>a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.card .card-tags>ul>li>a>span {
+    margin-right: 3px;
+    opacity: 0.7;
+}
+
+@media only screen and (min-width: 920px) {
+    .card .job-info {
+        display: flex;
+        gap: 5px;
+        margin-bottom: 10px;
+    }
+    .card:hover {
+        box-shadow: none;
+    }
+}

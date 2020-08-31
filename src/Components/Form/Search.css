@@ -1,0 +1,94 @@
+section.search {
+    background: var(--background-color);
+    width: 100%;
+    margin-bottom: 80px;
+    position: relative;
+    overflow: hidden;
+}
+
+section.search input {
+    color: var(--color-color);
+    font-size: 16px;
+    padding: 15px 20px;
+    border: none;
+    background: var(--shadow-color);
+    transition: .5s;
+    width: 100%;
+}
+
+section.search input:focus {
+    box-shadow: 0 0 40px var(--shadow-color);
+}
+
+section.search input::placeholder {
+    color: var(--placeholder-color);
+    font-size: 16px;
+}
+
+section.search .search-actions {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%) translateX(200%);
+    transition: .5s;
+}
+
+section.search:focus-within .search-actions {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%) translateX(0);
+}
+
+section.search .search-actions>button:first-of-type {
+    margin-right: 20px;
+}
+
+section.search .search-actions svg {
+    stroke: var(--font-color);
+}
+
+@media only screen and (min-width: 920px) {
+    section.search {
+        background: var(--background-color);
+        width: 100%;
+        margin-bottom: 80px;
+        position: relative;
+        overflow: hidden;
+    }
+    section.search input {
+        color: var(--color-color);
+        font-size: 18px;
+        padding: 25px 30px;
+        border: none;
+        background: var(--shadow-color);
+        transition: .5s;
+        width: 100%;
+    }
+    section.search input:focus {
+        box-shadow: 0 0 40px var(--shadow-color);
+    }
+    section.search input::placeholder {
+        color: var(--placeholder-color);
+        font-size: 18px;
+    }
+    section.search .search-actions {
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        transform: translateY(-50%) translateX(200%);
+        transition: .5s;
+    }
+    section.search:focus-within .search-actions {
+        position: absolute;
+        top: 50%;
+        right: 30px;
+        transform: translateY(-50%) translateX(0);
+    }
+    section.search .search-actions>button:first-of-type {
+        margin-right: 20px;
+    }
+    section.search .search-actions svg {
+        stroke: var(--font-color);
+    }
+}
