@@ -85,7 +85,7 @@ class Index extends Component {
     if (localStorage.getItem("signed")) {
       const signal = this.signal
       
-      fetch(`https://shielded-sands-39483.herokuapp.com/${LINK}&limit=50`, {signal})
+      fetch(`https://shielded-sands-39483.herokuapp.com/${LINK}&limit=100`, {signal})
       .then(response => response.json())
       .then(jobs => { 
           this.setState({...this.state, jobs: jobs})
