@@ -22,10 +22,6 @@ class SignUp extends Component {
         } else {
             this.setState({hide: true})
         }
-
-        const SIGN_UP_BUTTON = document.querySelector(".set-categories");
-
-        SIGN_UP_BUTTON.addEventListener("click", this.signUp)
     }
 
     fetchCategories() {
@@ -67,7 +63,7 @@ class SignUp extends Component {
                                 categories.map((category, index) => <Checkbox key={index} value={category.slug} name="category" title={category.name} id={category.slug}/>)
                             }
                         </div>
-                        <button className="set-categories">
+                        <button className="set-categories" onClick={this.signUp}>
                             Find jobs
                         </button>
                     </div>
